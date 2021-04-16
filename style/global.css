@@ -1,0 +1,174 @@
+/*  font-family: 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap');
+
+/*  font-family: 'Hind Madurai', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&display=swap');
+
+/*  font-family: 'Lora', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+
+
+
+
+
+body {
+    background-color: var(--dark);
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
+/*                DEFAULT SIZES                   */ 
+/* ---------------------------------------------- */ 
+
+/* --- HEADLINER --- */
+h1,
+h2 {
+    font-family: 'Work Sans', sans-serif; 
+    line-height: 160%;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+
+
+/* --- NORMAL TEXT --- */
+p, a  {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 160%;
+    color: var(--light);
+}
+
+/* --- ITALIC --- */
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 160%;
+}
+
+@media screen and (max-width: 700px) { }
+
+@media screen and (max-width: 420px) { }
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- */
+/*                    CANCEL SELECT                      */ 
+/* ----------------------------------------------------- */ 
+.noselect {
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
+/*                    COLORS                      */ 
+/* ---------------------------------------------- */ 
+
+:root {
+    --light: #fafafa;
+    --grey: #c9c9c9;
+    --deep_grey: #7c7c7c;
+    --dark: #121214;
+    --deep_dark: #0D0D0E;
+    --main: #fead11;
+    --main_dark: #655023;
+    --alt: #4194f4;
+}
+
+::selection {
+    background: var(--main);
+    color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
+/*                  SCROLLBAR                     */ 
+/* ---------------------------------------------- */ 
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track { background: var(--dark); }
+
+/* Handle */
+::-webkit-scrollbar-thumb { background: #888; border-radius: 1rem;}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
+/*                  ANIMATION                     */ 
+/* ---------------------------------------------- */ 
+
+@keyframes fadein {
+    from {
+       opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+}
+
+
+@keyframes slide /* to RIGHT */ {
+    0% {
+       left: -100%;
+    }
+    
+    100% {
+       left: 0%;
+    }
+}
