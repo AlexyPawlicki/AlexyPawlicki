@@ -420,7 +420,7 @@ a.burgermenu:focus .burgermenu_container:after {
 
 
 
-@media (max-height: 400px) { 
+@media (max-height: 500px) { 
 
     header {
         height: 6rem;
@@ -476,7 +476,7 @@ a.burgermenu:focus .burgermenu_container:after {
 
 
 
-@media (max-height: 300px) {
+@media (max-height: 370px) {
 
     .mb_menu-container {
         padding-top: 0rem;
@@ -516,12 +516,13 @@ a.burgermenu:focus .burgermenu_container:after {
       right: 2rem;
     width: 5rem;
     height: 5rem;
-    background-color: rgba(167, 167, 173, 0.1);
+    background-color: var(--alt);
     backdrop-filter: blur(3px);
     border-radius: 100%;
     cursor: pointer;
     visibility: hidden;
-    transition: background-color .2s ease-out;
+    opacity: 1;
+    transition: opacity .2s ease-out;
     z-index: 10;
   }
   .go-up_show {
@@ -549,8 +550,8 @@ a.burgermenu:focus .burgermenu_container:after {
   
   .go-up:hover,
   .go-up:focus {
-    background-color: rgba(167, 167, 173, 0.2);
-    transition: background-color .2s ease-out;
+    opacity: .5;
+    transition: opacity .2s ease-out;
   }
   
 
@@ -563,12 +564,13 @@ a.burgermenu:focus .burgermenu_container:after {
       transform: scale(0.7);
       right: 5px;
       bottom: calc(2% + 10px);
-      background: rgba(167, 167, 173, 0.05);
+      opacity: 1;
+      transition: opacity .2s ease-out;
     }
     .go-up:hover,
     .go-up:focus {
-      background-color: rgba(167, 167, 173, 0.1);
-      transition: background-color .2s ease-out;
+      opacity: .7;
+      transition: opacity .2s ease-out;
     }
   }
   
