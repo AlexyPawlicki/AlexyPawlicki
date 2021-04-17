@@ -39,10 +39,14 @@ window.onresize = function() {
 
     if (mq.matches) {
         if ($('.mb_menu').hasClass('mb_menu-opened')) {
-            $('.mb_menu').removeClass('mb_menu-opened');
+            $("body").removeClass("overflow_hidder");
+            $(".mb_menu").removeClass("mb_menu-opened");
+        
+            $(".burgermenu").removeClass("burgermenu_hover");
             $(".burgermenu_container").removeClass("burgermenu_container-anim");
+            $(".burgermenu_container").removeClass("burgermenu_container-notOpened");  
 
-            console.log('removed');
+            console.log('screen wide enough : burger closed');
         }
     }
 
