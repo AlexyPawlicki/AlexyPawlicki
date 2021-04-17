@@ -1,0 +1,244 @@
+
+
+
+
+footer {
+    width: 100%;
+    /* min-height: 25rem; */
+    padding: 4rem 0 3rem 0;
+    background-color: var(--deep_dark);
+}
+
+.footer_wrapper {
+    display: flex;
+        flex-flow: row wrap;
+        align-content: center;    
+        row-gap: 5rem;
+        justify-content: space-between;
+        align-items: flex-start;
+    width: clamp(13rem, 80vw, 140rem);
+    min-height: 13rem;
+    margin: auto;
+}
+
+.footer_item {
+    padding: 0 2rem;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------- */
+/*                  LOGO                     */ 
+/* ----------------------------------------- */ 
+
+.footer_logo-container {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    padding: 0 2rem;
+}
+
+.footer_logo {
+    width: 13rem;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------- */
+/*                  LINKS TO OTHER PAGES                     */ 
+/* --------------------------------------------------------- */ 
+
+
+.footer_links-container {
+    display: flex;
+        gap: clamp(10px, 4vw, 8rem);
+    width: fit-content;
+    padding: 0 2rem;
+}
+
+.footer_links-items {
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+        row-gap: 1rem;
+}
+
+.footer_links-items a {
+    color: var(--deep_grey);
+    font-size: 18px;
+    transition: color .1s ease;
+}
+
+.footer_links-items a:hover,
+.footer_links-items a:focus {
+    color: var(--light);
+    transition: color .1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------ */
+/*                  EMAIL > SHORTCUT                      */ 
+/* ---------------------------------------------------------------- */ 
+
+.footer_contact {
+    display: flex;
+        flex-direction: column;
+    width: 22rem;
+    padding: 0 2rem;
+}
+
+.footer_contact-link {
+    width: fit-content;
+    cursor: pointer;
+}
+
+.footer_contact-label {
+    color: var(--light);
+}
+
+.footer_contact-label {
+    color: var(--light);
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    width: 70%;
+    line-height: 125%;
+}
+
+.footer_email {
+    display: flex;
+        gap: 10px;
+    width: fit-content;
+}
+
+.footer_email-adress {
+    font-family: 'Prompt', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--main);
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/*                  ALL THE WAY DOWN - COPYRIGHTS                      */ 
+/* ---------------------------------------------------------------- */ 
+
+.footer_copyrights {
+    color: var(--deep_grey);
+    width: 90%;
+    margin: 3.5rem auto 1rem auto;
+    width: 70vw;
+    font-family: 'Prompt', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    opacity: .7;
+}
+
+.icon_heart {
+    color: #b83636;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1240px) {
+
+    .footer_copyrights {
+        margin: 5.5rem auto 1.3rem auto;
+    }
+
+    .footer_wrapper {
+        width: clamp(80vw, 80vw, 140rem);
+    }
+
+    .footer_email-adress {
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+    .footer_logo {
+        width: 10rem;
+    }
+
+    .footer_contact {
+        width: 20rem;
+    }
+    
+    .footer_contact-label {
+        font-size: 1.9em;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .footer_wrapper {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .footer_contact {
+        padding: unset;
+        width: 16.9rem;
+        border-top: 1px solid var(--deep_grey);
+        padding-top: 2rem;
+    }
+
+    .footer_links-container {
+        padding: unset;
+        width: 100%;
+        place-content: space-around;
+    }
+
+    .footer_logo {
+        width: 10rem;
+        opacity: .9;
+    }
+
+}
