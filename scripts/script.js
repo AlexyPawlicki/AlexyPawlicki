@@ -18,5 +18,5 @@ function copy_to_clipboard(){
     window.getSelection().addRange(copied);
     document.execCommand('copy');
     window.getSelection().removeAllRanges();
-    alert("-CLICK!-\n (l'adresse a bien été copiée dans le presse-papier)"); 
+    alert("🤖 -CLICK!-\n (l'adresse a bien été copiée dans le presse-papier)"); 
 }     

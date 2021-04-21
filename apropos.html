@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/header.css">
-    <link rel="stylesheet" href="./style/homepage.css">
+    <link rel="stylesheet" href="./style/apropos.css">
     <link rel="stylesheet" href="./style/footer.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -29,7 +29,7 @@
         <ul class="mb_links-container">
           <a href="./apropos.html"><li class="mb_menu-link">À propos.</li></a>
           <a href="./work.html"><li class="mb_menu-link">Mes travaux.</li></a>
-          <a href="TODO"><li class="mb_menu-link">Contact.</li></a>
+          <a href="./contact.html"><li class="mb_menu-link">Contact.</li></a>
         </ul>
         <div class="mb_socialmedia-container">
           <a href="TODO" target="_blank"><img class="mb_socialmedia" src="./assets/icons/dribbble.png" alt=""></a>
@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>
-    <a class="go-up" onclick="$('#homepage').animatescroll({scrollSpeed:700,easing:'easeInSine'});"></a>
+    <a class="go-up" onclick="$('#apropos').animatescroll({scrollSpeed:700,easing:'easeInSine'});"></a>
 
     
 
@@ -67,38 +67,59 @@
 
 
 
+    <section id="apropos" class="headtitle" style="    background-image: url(https://images.unsplash.com/photo-1618912421518-1d207fab1142?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+    position: relative; display: flex; justify-content: center;"> 
+      <img src="./assets/more.svg" alt="" style="filter: invert(1); position: absolute; bottom: 2rem; transform: scale(2);">
+    </section>
 
 
 
-    <section id="homepage" class="homepage">
-
-      <div class="homepage_box">
-        <img src="./assets/homepage_assets/2.svg" draggable="false" id="parallax_top1" class="homepage_box-wave2">
-        <img src="./assets/homepage_assets/1.svg" draggable="false" id="parallax_top2" class="homepage_box-wave1">
-      </div>
-      <div class="homepage_box wave-invert">
-        <img src="./assets/homepage_assets/2.svg" id="parallax_bottom1" draggable="false" class="homepage_box-wave2">
-        <img src="./assets/homepage_assets/1.svg" id="parallax_bottom2" draggable="false" class="homepage_box-wave1">
-      </div>
 
 
-      <div class="homepage_content-box">
-        <div class="homepage_content-container">
-          <div class="homepage_sm_divider"></div>
-          <h1 class="homepage_content-presentation">Je m'appelle <br> <span>Alexy</span></h1>
-          <!-- <p>Un étudiant en informatique qui rêve de devenir web-developer.</p> -->
-          <p>Un étudiant en informatique à la recherche d'un stage Web.</p>
+    <section id="apropos_parcours" class="parcours">
+      <img src="./assets/apropos_assets/lines.svg" class="parcours_lines"></div>
 
-          <div class="homepage_content-calltoaction-container">
-            <a href="TODO"> <div class="homepage_content-btn calltoaction_contact">Say Hello.</div> </a>
-            <a href="./work.html"> <div class="homepage_content-btn calltoaction_work">Projets.</div> </a>
-          </div>
-          
+      <div class="parcours_container">
+        <div class="parcours_img" data-aos="fade-right" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1591351566678-6b29a9d0123f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="photo">
         </div>
+        <a href="http://www.iut-lens.univ-artois.fr/" target="_blank" class="parcours_sm-img-link">
+          <div class="parcours_sm-img" data-aos="fade-right"  data-aos-delay="350">
+            <img  class="parcours_sm-card" src="https://lvdneng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2019/10/29/node_658310/42084220/public/2019/10/29/B9721403567Z.1_20191029142157_000%2BG3SEPV2KG.3-0.jpg?itok=FVcpmsZp1572355371" alt="image de l'université">
+          </div>
+        </a>
+
+        <div  class="parcours_txt">
+          <h2 data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="center-center">Mon parcours.</h2>
+          <p data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="top-center" data-aos-delay="200">
+            Je suis un étudiant de 19 ans en seconde année d'un cursus 
+            informatique (<b>DUT Informatique</b>) à l'Institut Universitaire de Technologie 
+            de Lens (62300). 
+            <br> <br> 
+            J'aspire à devenir Web-Developer / Web-Designer, pour moi 
+            cette embranchement représente la synthèse parfaite de deux de mes 
+            plus grandes passions, le web et le graphisme.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+
+    <div class="round_divider"></div>
+    
+    <section class="apropos_loisirs"> 
+      <div class="apropos_loisirs-container">
+        <h2>Mes loisirs.</h2>
+        <p>
+          Natus obcaecati dicta nobis vero ad suscipit, reprehenderit porro omnis a facere perferendis, voluptatem sunt, maxime temporibus aperiam minima quis.
+        </p>
       </div>
 
     </section>
 
+
+
+    
 
 
 
@@ -119,7 +140,7 @@
             <div class="footer_links-items">
               <a href="./apropos.html">À propos.</a>
               <a href="./work.html">Mes projets.</a>
-              <a href="TODO">Contact.</a>
+              <a href="./contact.html">Contact.</a>
             </div>
             <div class="footer_links-items">
               <a href="TODO" target="_blank">Github.</a>
@@ -164,7 +185,7 @@
     </script>
 
     <script src="./scripts/burgermenu.js"></script>
-    <script src="./scripts/homepage_parallax.js"></script>
+    <script src="./scripts/header_displacement.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

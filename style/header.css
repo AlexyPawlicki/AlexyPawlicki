@@ -26,7 +26,8 @@ header {
     background: linear-gradient(45deg, var(--dark), var(--dark));
     background-repeat: no-repeat;
     background-size: 100% 0%;
-    transition: background-size .5s ease 1s;
+    transition: all .5s ease .1s;
+    transition-timing-function: ease-out;
 }
 
 .header_container {
@@ -56,6 +57,7 @@ header {
 
 .header_logo {
     height: 65px;
+    margin-top: 10px;
 }
 
 
@@ -93,6 +95,27 @@ header {
 
 
 
+/* ------------------------------------------------------- */ 
+/*                SOCIAL LOGO - COMPUTER                   */ 
+/* ------------------------------------------------------- */ 
+
+.header_sociallogos {
+    display: none;
+}
+
+.header_socialmedia {
+    width: 26px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
 /* ---------------------------------------------- */ 
 /*                BURGER BUTTON                   */ 
 /* ---------------------------------------------- */ 
@@ -115,8 +138,9 @@ header {
 
 .burgermenu {
     position: fixed;
-        top: 15px;
         right: 5px;
+        top: 0.5rem;
+
     width: fit-content;
     cursor: pointer;
     align-self: center;
@@ -494,6 +518,17 @@ a.burgermenu:focus .burgermenu_container:after {
 
 
 
+@media (min-width: 1650px) {
+
+    .header_sociallogos {
+        display: flex;
+            align-self: center;
+            justify-self: self-end;
+            gap: 2.5rem;
+        width: fit-content;
+    }
+
+}
 
 
 
