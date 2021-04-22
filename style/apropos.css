@@ -14,7 +14,7 @@
 }
 
 /* light */
-.round_divider {
+/* .round_divider {
     background: var(--light); 
     position: absolute;
     width: 100%;  
@@ -24,10 +24,9 @@
     transition: height .3s ease-out;
     z-index: 1;
 }
-
 @media (max-width: 900px) {
     .round_divider { transition: height .3s ease-out; height: 4rem; }
-}
+} */
 
 
 
@@ -41,10 +40,6 @@
 /* --------------------------------------------------- */ 
 
 .parcours {    
-    /* display: flex;
-        align-items: center;
-        justify-content: center;
-    padding-top: 3rem; */
     color: var(--dark);
     background-color: var(--light);
     width: 100%;
@@ -173,11 +168,34 @@ img.parcours_sm-card:focus {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .apropos_loisirs {     
     position: relative; 
-    min-height: 55rem; 
-    height: calc(100vh + 15rem); 
-    padding-top: 10rem;
+    min-height: 15rem; 
+    height: fit-content; 
+    padding: 9rem 0 5rem 0;
     background: linear-gradient(0deg, #c9c9c9 0%, #ebebeb 40%);
 }
 
@@ -199,6 +217,79 @@ img.parcours_sm-card:focus {
     text-align: center;
 }
 
+.apropos_loisirs h2 {
+    margin: 0;
+}
+
+.apropos_loisirs p {
+    margin: 2rem 0 0 0;
+}
+
+.cards-container {
+    display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 3rem;
+        column-gap: 3vw;
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.card {
+    display: grid;
+        grid-template-rows: 55% 25% 20%;
+        align-items: center;
+    width: clamp(14rem, 20vw, 25rem);
+    height: clamp(19rem, 25vw, 30rem);
+    
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 5px rgb(0, 0, 0, .07);
+    background-color: var(--light);
+}
+
+.card img {
+    width: 65%;
+    justify-self: center;
+}
+
+.card h2 {
+    font-size: 34px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--deep_grey);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -216,18 +307,18 @@ img.parcours_sm-card:focus {
         width: 100%;
     }
 
-    .apropos_loisirs {
-        width: 100vw;
+    .card {
+        width: clamp(10rem, 20vw, 25rem);
+        height: clamp(16rem, 25vw, 30rem);
+        padding: 2rem;
     }
 
-
+    .card img {
+        margin-top: -40px;
+        width: 70%;
+    }
 
 }
-
-
-
-
-
 
 
 
@@ -278,12 +369,160 @@ img.parcours_sm-card:focus {
 
 
     .apropos_loisirs {
-        padding-top: 20rem;  
+        padding: 10rem 0 5rem 0;
     }
 
     .apropos_loisirs-container {
         width: clamp(13rem, 45vw, 80rem);
     }
+
+    .cards-container {
+        column-gap: 6vw;
+        padding: 7rem 0;
+    }
+    
+    .card {
+        position: relative;
+        grid-template-rows: 60% 17% 23%;
+        width: clamp(16rem, 20vw, 16rem);
+        height: clamp(20rem, 25vw, 20rem);
+        cursor: pointer;
+    }
+
+    .card h2 {
+        font-size: 38px;
+    }
+    
+    .card p {
+        font-size: 18px;
+    }
+
+
+/* ---- */
+.card.drawing img {
+    z-index: 1;
+}
+
+.card.drawing::after {
+    content: "";
+    position: absolute;
+        right: 40px;
+        bottom: 170px;
+    background: url(../assets/loisirs_assets/comic.png) 0 0 no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 75px;
+    background-position: center;
+
+    opacity: 0;
+
+    transition: all .4s ease;
+}
+
+.card.drawing:hover::after {
+    right: -85px;
+    bottom: 170px;
+    opacity: 1;
+    transition: all .6s ease;
+}
+
+.card.drawing:hover img {
+    animation: swipe 1s ease;
+}
+
+@keyframes swipe {
+    0%, 100% {
+        transform: translate(0px, 0px);
+    }
+    25%, 75% {
+        transform: translate(8px, -5px);
+    }
+    50% {
+        transform: translate(22px, 10px);
+    }
+}
+
+
+/* ---- */
+    .card.series::after {
+        content: "";
+        position: absolute;
+            right: 0;
+            bottom: 240px;
+        background: url(../assets/loisirs_assets/3d-glasses.png) 0 0 no-repeat;
+        background-size: contain;
+        width: 8rem;
+        height: 55px;
+        background-position: center;
+
+        opacity: 0;
+
+        transition: all .4s ease;
+    }
+
+    .card.series:hover::after {
+        bottom: 144px;
+        opacity: 1;
+        transition: all .6s ease;
+    }
+
+    .card.series:hover img {
+        animation: bounce 1s ease;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: scaleY(1);
+        }
+        25%, 75% {
+            transform: scaleY(.9);
+        }
+        50% {
+            transform: scaleY(1.05);
+        }
+    }
+
+
+/* ---- */
+    .card.guitar::after {
+        content: "";
+        position: absolute;
+            top: 10px;
+            right: 45px;
+        background: url(../assets/loisirs_assets/soundwave.png) 0 0 no-repeat;
+        background-size: contain;
+        width: 8rem;
+        height: 105px;
+        background-position: center;
+
+        opacity: 0;
+
+        transition: all .4s ease;
+    }
+
+    .card.guitar:hover::after {
+        right: 12px;
+        opacity: 1;
+        transition: all .6s ease;
+    }
+
+    .card.guitar:hover img {
+        animation: shake 1s ease;
+    }
+
+
+    @keyframes shake {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+        25%, 75% {
+            transform: rotate(3deg);
+        }
+        50% {
+            transform: rotate(-3deg);
+        }
+    }
+
     
 }
 
