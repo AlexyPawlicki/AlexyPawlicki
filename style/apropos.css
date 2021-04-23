@@ -7,10 +7,42 @@
 }
 
 .headtitle {
-    height: 100vh;
-    min-height: 25rem;
+    min-height: 40rem;
+    height: 35vh;
     background-color: var(--dark);
     background-image: url("../assets/grain.png");
+    position: relative;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1441906363162-903afd0d3d52?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.headtitle h1 {
+    color: var(--light);
+    align-self: center;
+}
+
+.headtitle img {
+    position: absolute; 
+        left: calc(50% - 24px);
+        bottom: 2rem; 
+    filter: invert(1); 
+    cursor: pointer;
+    transform: scale(2);
+    animation: updown .8s ease infinite;
+}
+
+@keyframes updown {
+    0%, 100% {
+        bottom: 2rem;
+    }
+    50% {
+        bottom: 2.5rem;
+    }
 }
 
 /* light */
@@ -193,6 +225,7 @@ img.parcours_sm-card:focus {
 
 .apropos_loisirs {     
     position: relative; 
+    background-image: url("../assets/grain.png");
     min-height: 15rem; 
     height: fit-content; 
     padding: 9rem 0 5rem 0;
@@ -280,6 +313,63 @@ img.parcours_sm-card:focus {
 
 
 
+.skills_box {
+    background-image: url("../assets/grain.png");
+}
+
+.skills_box {
+    min-height: 12rem;
+    background-color: var(--dark);
+    padding: 2rem 0;
+}
+
+.skills_box h2 {
+    color: var(--light);
+    text-align: center;
+}
+
+.skills_container {
+    display: grid;
+        row-gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;    
+        justify-content: center;
+        text-align: center;
+    margin: 7rem auto;
+    width: clamp(15rem, 60%, 60rem);
+}
+
+.skills_container img {
+    width: 4rem;
+    height: 4rem;
+    filter: drop-shadow(1px 1px 15px #14151b8f);
+}
+
+.skill_title {
+    margin: 1rem 0 0.5rem 0;    
+}
+
+.skill_year {
+    margin: 0;
+    color: var(--grey);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -316,6 +406,10 @@ img.parcours_sm-card:focus {
     .card img {
         margin-top: -40px;
         width: 70%;
+    }
+
+    .skills_container {
+        width: 100%;
     }
 
 }
@@ -522,6 +616,15 @@ img.parcours_sm-card:focus {
             transform: rotate(-3deg);
         }
     }
+
+
+    /* ---- ---- */
+
+
+    .skills_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 
     
 }
