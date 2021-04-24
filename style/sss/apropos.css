@@ -1,0 +1,686 @@
+
+
+
+
+.color_yellow {
+    color: var(--main);
+}
+
+.headtitle {
+    min-height: 40rem;
+    height: 35vh;
+    background-color: var(--dark);
+    background-image: url("../assets/grain.png");
+    position: relative;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1441906363162-903afd0d3d52?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.headtitle h1 {
+    color: var(--light);
+    align-self: center;
+}
+
+.headtitle img {
+    position: absolute; 
+        left: calc(50% - 24px);
+        bottom: 2rem; 
+    filter: invert(1); 
+    cursor: pointer;
+    transform: scale(2);
+    animation: updown .8s ease infinite;
+}
+
+@keyframes updown {
+    0%, 100% {
+        bottom: 2rem;
+    }
+    50% {
+        bottom: 2.5rem;
+    }
+}
+
+/* light */
+/* .round_divider {
+    background: var(--light); 
+    position: absolute;
+    width: 100%;  
+    height: 10rem; 
+    border-radius: 0 0 100% 100%; 
+    background-image: url('./assets/grain.png'); 
+    transition: height .3s ease-out;
+    z-index: 1;
+}
+@media (max-width: 900px) {
+    .round_divider { transition: height .3s ease-out; height: 4rem; }
+} */
+
+
+
+
+
+
+
+
+/* --------------------------------------------------- */
+/*                    1st SECTION                      */ 
+/* --------------------------------------------------- */ 
+
+.parcours {    
+    color: var(--dark);
+    background-color: var(--light);
+    width: 100%;
+    min-height: 35rem;
+    height: auto;
+    overflow: hidden;
+
+    background-image: url("../assets/grain.png");
+}
+
+.parcours_lines {
+    position:absolute; 
+    right: 15px;
+    width: clamp(13rem, 13vw, 60rem);
+}
+
+
+
+
+
+.parcours_container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    margin-top: 16rem;
+    margin-bottom: 12rem;
+    height: fit-content;
+    width: 100%;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------ Image ------ */ 
+
+.parcours_img {
+    display: flex;
+    height: 30rem;
+}
+
+.parcours_img img {
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.parcours_sm-img {
+    display: flex;
+    height: fit-content;
+    justify-self: end;
+    filter: drop-shadow(0px 0px 10px #00000050);
+}
+
+.parcours_sm-card {
+    width: clamp(10rem, 53vw, 16rem);
+    height: clamp(12rem, 60vw, 18rem);
+    position: absolute;
+    right: 0;
+    transform: translate(-3vw, -100%);
+    object-fit: cover;
+    object-position: 40% 50%;
+    border-radius: 8px;
+
+    transition: all .2s ease;
+}
+
+img.parcours_sm-card:hover,
+img.parcours_sm-card:focus {
+    transform: translate(-3vw, -100%) scale(1.05);
+    transition: all .2s ease;
+}
+
+
+.parcours_sm-img-link {
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------ text ------ */ 
+
+.parcours_txt {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin-top: 1.8rem;
+}
+
+.parcours_txt h2,
+.parcours_txt p {
+    color: var(--dark);
+    margin: 0;
+}
+
+.parcours_txt p {
+    margin: 2.3rem 0;
+    width: clamp(13rem, 75vw, 40rem);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.apropos_loisirs {     
+    position: relative; 
+    background-image: url("../assets/grain.png");
+    min-height: 15rem; 
+    height: fit-content; 
+    padding: 9rem 0 5rem 0;
+    background: linear-gradient(0deg, #c9c9c9 0%, #ebebeb 40%);
+}
+
+.apropos_loisirs-container {
+    margin: auto;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+
+.apropos_loisirs h2,
+.apropos_loisirs p {
+    display: flex;
+        flex-direction: column; 
+        align-items: center;
+    color: var(--dark);
+    height: fit-content;
+    text-align: center;
+}
+
+.apropos_loisirs h2 {
+    margin: 0;
+}
+
+.apropos_loisirs p {
+    margin: 2rem 0 0 0;
+}
+
+.cards-container {
+    display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 3rem;
+        column-gap: 3vw;
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.card {
+    display: grid;
+        grid-template-rows: 55% 25% 20%;
+        align-items: center;
+    width: clamp(14rem, 20vw, 25rem);
+    height: clamp(19rem, 25vw, 30rem);
+    
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 5px rgb(0, 0, 0, .07);
+    background-color: var(--light);
+}
+
+.card img {
+    width: 65%;
+    justify-self: center;
+}
+
+.card h2 {
+    font-size: 34px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--deep_grey);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills_box {
+    background-image: url("../assets/grain.png");
+}
+
+.skills_box {
+    min-height: 12rem;
+    background-color: var(--dark);
+    padding: 2rem 0;
+}
+
+.skills_box h2 {
+    color: var(--light);
+    text-align: center;
+}
+
+.skills_container {
+    display: grid;
+        row-gap: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;    
+        justify-content: center;
+        text-align: center;
+    margin: 7rem auto;
+    width: clamp(15rem, 60%, 60rem);
+}
+
+.skills_container img {
+    width: 4rem;
+    height: 4rem;
+    filter: drop-shadow(1px 1px 15px #14151b8f);
+}
+
+.skill_title {
+    margin: 1rem 0 0.5rem 0;    
+}
+
+.skill_year {
+    margin: 0;
+    color: var(--grey);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+/*                    MAX 640px                      */ 
+/* ------------------------------------------------- */ 
+
+@media (max-width: 640px) {
+
+    .parcours_txt p {
+        width: 100%;
+    }
+
+    .card {
+        width: clamp(10rem, 20vw, 25rem);
+        height: clamp(16rem, 25vw, 30rem);
+        padding: 2rem;
+    }
+
+    .card img {
+        margin-top: -40px;
+        width: 70%;
+    }
+
+    .skills_container {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+/* ------------------------------------------------- */
+/*                    MIN 900px                      */ 
+/* ------------------------------------------------- */ 
+
+@media (min-width: 900px) {
+
+    .parcours_container {
+        grid-template-rows: unset;
+        grid-template-columns: repeat(3, auto);
+        margin-top: 18rem;
+    }
+
+    .parcours_img {
+        height: 40rem;
+    }
+    
+    .parcours_img img {
+        width: 40vw;
+    }
+
+    .parcours_sm-card {
+        width: 16rem;
+        height: 18rem;
+        transform: translate(4vw, 24.5rem);
+    }
+    
+    img.parcours_sm-card:hover,
+    img.parcours_sm-card:focus {
+        transform: translate(4vw, 24.5rem) scale(1.05);
+        transition: all .2s ease;
+    }
+    
+    .parcours_txt {
+        width: 45vw;
+        margin-left: 5vw;
+        align-self: center;
+    }
+
+    .parcours_txt p {
+        max-width: 90%;
+    }
+
+
+    .apropos_loisirs {
+        padding: 10rem 0 5rem 0;
+    }
+
+    .apropos_loisirs-container {
+        width: clamp(13rem, 45vw, 80rem);
+    }
+
+    .cards-container {
+        column-gap: 6vw;
+        padding: 7rem 0;
+    }
+    
+    .card {
+        position: relative;
+        grid-template-rows: 60% 17% 23%;
+        width: clamp(16rem, 20vw, 16rem);
+        height: clamp(20rem, 25vw, 20rem);
+        cursor: pointer;
+    }
+
+    .card h2 {
+        font-size: 38px;
+    }
+    
+    .card p {
+        font-size: 18px;
+    }
+
+
+/* ---- */
+.card.drawing img {
+    z-index: 1;
+}
+
+.card.drawing::after {
+    content: "";
+    position: absolute;
+        right: 40px;
+        bottom: 170px;
+    background: url(../assets/loisirs_assets/comic.png) 0 0 no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 75px;
+    background-position: center;
+
+    opacity: 0;
+
+    transition: all .4s ease;
+}
+
+.card.drawing:hover::after {
+    right: -85px;
+    bottom: 170px;
+    opacity: 1;
+    transition: all .6s ease;
+}
+
+.card.drawing:hover img {
+    animation: swipe 1s ease;
+}
+
+@keyframes swipe {
+    0%, 100% {
+        transform: translate(0px, 0px);
+    }
+    25%, 75% {
+        transform: translate(8px, -5px);
+    }
+    50% {
+        transform: translate(22px, 10px);
+    }
+}
+
+
+/* ---- */
+    .card.series::after {
+        content: "";
+        position: absolute;
+            right: 0;
+            bottom: 240px;
+        background: url(../assets/loisirs_assets/3d-glasses.png) 0 0 no-repeat;
+        background-size: contain;
+        width: 8rem;
+        height: 55px;
+        background-position: center;
+
+        opacity: 0;
+
+        transition: all .4s ease;
+    }
+
+    .card.series:hover::after {
+        bottom: 144px;
+        opacity: 1;
+        transition: all .6s ease;
+    }
+
+    .card.series:hover img {
+        animation: bounce 1s ease;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: scaleY(1);
+        }
+        25%, 75% {
+            transform: scaleY(.9);
+        }
+        50% {
+            transform: scaleY(1.05);
+        }
+    }
+
+
+/* ---- */
+    .card.guitar::after {
+        content: "";
+        position: absolute;
+            top: 10px;
+            right: 45px;
+        background: url(../assets/loisirs_assets/soundwave.png) 0 0 no-repeat;
+        background-size: contain;
+        width: 8rem;
+        height: 105px;
+        background-position: center;
+
+        opacity: 0;
+
+        transition: all .4s ease;
+    }
+
+    .card.guitar:hover::after {
+        right: 12px;
+        opacity: 1;
+        transition: all .6s ease;
+    }
+
+    .card.guitar:hover img {
+        animation: shake 1s ease;
+    }
+
+
+    @keyframes shake {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+        25%, 75% {
+            transform: rotate(3deg);
+        }
+        50% {
+            transform: rotate(-3deg);
+        }
+    }
+
+
+    /* ---- ---- */
+
+
+    .skills_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------- */
+/*                    MIN 1640px                      */ 
+/* -------------------------------------------------- */ 
+
+@media (min-width: 1640px) {
+
+    .parcours_container {
+        grid-template-columns: 35vw 0 64vw;
+        gap: 0;
+    }
+
+    .parcours_txt {
+        align-items: center;
+        transform: translateX(5vw);
+    }
+    
+    .parcours_txt h2 {
+        width: 33rem;
+    }
+
+    .parcours_txt p {
+        width: 33rem;
+    }
+
+    .parcours_img img {
+        width: 75%;
+        margin: auto 0 auto auto;
+        border-radius: 2px;
+        filter: drop-shadow(1px 1px 13px #00000070);
+    }
+
+    .parcours_sm-card {
+        width: 18rem;
+        height: 21rem;
+        border-radius: 5px;
+        transform: translate(6vw, 21.5rem);
+    }
+    
+    img.parcours_sm-card:hover,
+    img.parcours_sm-card:focus {
+        transform: translate(6vw, 21.5rem) scale(1.05);
+        transition: all .2s ease;
+    }
+
+}
