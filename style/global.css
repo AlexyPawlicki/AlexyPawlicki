@@ -34,6 +34,11 @@ li {
 b {
     font-weight: 500;
 }
+.underline {
+    padding-bottom: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0px -27px var(--main);
+}
 
 
 
