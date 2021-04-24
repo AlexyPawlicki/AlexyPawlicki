@@ -70,69 +70,9 @@
 
 
 
-    <section id="works" class="works">
+    <section id="work" class="work">
 
-      <div class="divider"></div>
-  
-      <div class="works__title-container"> <h1>Works</h1> </div>
-  
-      <div class="arrow"> </div>
-  
-      <div class="works__container aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
-        <div class="works__inner" id="works__grid">
-          <li id="card_1" class="works__card"></li>
-          <li id="card_2" class="works__card"></li>
-          <li id="card_3" class="works__card"></li>
-          <li id="card_4" class="works__card"></li>
-
-          <li id="card_5" class="works__card"></li>
-          <li id="card_6" class="works__card"></li>
-          <li id="card_7" class="works__card"></li>
-          <li id="card_8" class="works__card"></li>
-        </div>
-      </div>
-  
-  
-
-      <div class="project__displayer" id="project__displayer">
-
-        <a onclick="collapseProject()" class="close works__close"></a>
-
-        <div class="project__disp-box" id="project__disp">
-
-        <div class="project__disp-left">
-          <div class="project__main-img-container">
-            <img id="project__image" class="project__main-img" src="" alt="" onclick="window.open(this.src)">
-          </div>
-
-          <div class="project__prev-container">
-            <div class="project__prev-inner">
-              <img id="project__preview1" src="" alt="" class="project__preview-img" onclick="changeImage(this)" onmouseover="changeImage(this)" draggable="false">
-              <img id="project__preview2" src="" alt="" class="project__preview-img" onclick="changeImage(this)" onmouseover="changeImage(this)" draggable="false">
-              <img id="project__preview3" src="" alt="" class="project__preview-img" onclick="changeImage(this)" onmouseover="changeImage(this)" draggable="false">
-              <img id="project__preview4" src="" alt="" class="project__preview-img" onclick="changeImage(this)" onmouseover="changeImage(this)" draggable="false">
-            </div>
-          </div>
-        </div>
-
-
-        <div class="project__disp-right"> 
-          <div class="project__detail-container">
-            <h2 id="project__title"></h2>
-            <div id="project__tag" class="project__tag-container"></div>
-            <p id="project__txt"> </p>
-
-            <div class="project__buttons">
-              <a href="#" tabindex="TODO"><li>Voir le projet</li></a>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </section>
+    </section>
 
 
 
@@ -196,35 +136,9 @@
         once: true, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
       });
-
-
-
-        // -------- ----------------------------------- -------- // 
-        // -------- PROJECT LISTENER > CHANGING CONTENT -------- //
-        // -------- ----------------------------------- -------- // 
-          // Important var
-          var title = document.getElementById('project__title')
-          var tag = document.getElementById('project__tag')
-          var para = document.getElementById('project__txt')
-
-          document.getElementById("card_1").addEventListener("click", card1);
-          document.getElementById("card_2").addEventListener("click", card2);
-          // document.getElementById("card_3").addEventListener("click", card3);
-          // document.getElementById("card_4").addEventListener("click", card4);
-          // document.getElementById("card_5").addEventListener("click", card5);
-          // document.getElementById("card_6").addEventListener("click", card6);
-
-          var mimage = document.querySelector("#project__image");
-          var prev1 = document.getElementById('project__preview1')
-          var prev2 = document.getElementById('project__preview2')
-          var prev3 = document.getElementById('project__preview3')
-          var prev4 = document.getElementById('project__preview4')
-
     </script>
 
     <script src="./scripts/burgermenu.js"></script>
-    <script  src="./scripts/works_grid.js"></script>
-    <script  src="./scripts/projects_content.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
