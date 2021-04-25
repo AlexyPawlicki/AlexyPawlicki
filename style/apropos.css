@@ -19,8 +19,8 @@
 
 .line_divider {
     height: 3px;
-    background: var(--deep_grey);
-    width: 75%;
+    background: var(--grey);
+    width: 45%;
     margin: auto;
 }
 
@@ -75,7 +75,9 @@
         flex-direction: column;
     margin: auto;
     width: fit-content;
-    height: fit-content;
+    
+    height: 100%;
+    justify-content: space-around;
 }
 
 .apropos_about-title,
@@ -124,6 +126,7 @@
     padding-left: 40px;
     border: 2px solid var(--main);
     margin: 1.5rem 0 0 0;
+    z-index: 1;
 
     transition: all .3s ease;
 }
@@ -244,7 +247,8 @@
         grid-template-columns: repeat(3,  1fr);
         justify-items: center;
         gap: 3rem;
-    margin: 6rem 0 10rem 0;
+    margin: 6rem 0 12rem 0;
+    z-index: 1;
 }
 
 .langage_container li {
@@ -256,7 +260,7 @@
     padding: 1.2rem;
     background: var(--light);
     border-radius: 6px;
-    filter: drop-shadow(0px 0px 10px rgb(0 0 0 / 15%));
+    filter: drop-shadow(0px 0px 10px rgb(0 0 0 / 25%));
 }
 
 .langage_icon {
@@ -275,6 +279,160 @@
     font-size: 20px;
     margin: 0 0 1rem 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- */
+/*                  LANGAGE SECTION                      */ 
+/* ----------------------------------------------------- */ 
+
+.loisirs_box {
+    margin-top: -50px;
+    background: #ebebeb;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.loisirs_container-txt {
+    margin: auto;
+    padding: 6rem 0 20px 0;
+    width: clamp(20rem, 75%, 90rem);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.loisirs_container-txt h2,
+.loisirs_container-txt p {
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--dark);
+}
+
+.loisirs_container-txt h2 {
+    margin-bottom: 40px;
+    margin-top: unset;
+}
+
+.loisirs_container-txt p {
+    width: clamp(40rem, 50%, 90rem);
+    margin: 0 auto;
+}
+
+.loisirs_cards-container {
+    display: flex;
+        flex-wrap: wrap;
+        row-gap: 2.2rem;
+        column-gap: 1rem;
+        justify-content: space-between;
+
+    margin: auto;
+    padding-bottom: 8rem;
+    min-height: 10rem;
+    width: clamp(79rem, 75%, 100rem);
+    padding: 6.5rem 0 12rem 0;
+}
+
+.loisirs_card {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    width: 22rem;
+    height: 10rem;
+    border-radius: 8px;
+    padding: .5rem 1.5rem;
+}
+
+.loisirs_card h5, 
+.loisirs_card p {
+    margin: 0;
+}
+
+.loisirs_card h5 {
+    color: var(--light);  
+    margin-bottom: 3px;  
+}
+
+.loisirs_card-icon {
+    width: 3.8rem;
+    height: 3.8rem;
+    align-self: start;
+    justify-self: right;
+    margin: auto 0 auto auto;
+}
+
+.loisirs_card p {
+    font-size: 16px;
+    opacity: .8;
+    width: 90%;
+}
+
+.loisirs_card-top {
+    display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+}
+
+
+.loisirs_card.one {
+    background: linear-gradient(0.25turn, #10379F, #1C32BC, #1C32BC);
+    z-index: 1;
+}
+
+.loisirs_card.one:before {
+    content: url(../assets/apropos_assets/trame2.svg) ;
+    position: absolute;; 
+    transform: translate(-1.5rem, -8.8rem);
+    width: clamp(12rem, 12%, 15rem);
+}
+
+.loisirs_card.one:after {
+    content: url(../assets/apropos_assets/trame3.svg) ;
+    position: absolute;; 
+    transform: translate(11.5rem, 7.7rem);
+    width: clamp(9rem, 9%, 10.8rem);
+}
+
+.loisirs_card.two {
+    background: linear-gradient(0.25turn, #0B62CD, #0082D8, #0082D8);
+}
+
+.loisirs_card.three {
+    background: linear-gradient(0.25turn, #0096C8, #00A3BE, #00A3BE);
+}
+
+.loisirs_card.three .loisirs_card-icon {
+    width: 3.4rem;
+}
+
+@media (max-width: 1260px) {
+    .loisirs_card.one:after {
+        display: none;
+    }
+}
+
+
+
+
+
 
 
 
@@ -323,6 +481,11 @@
     .apropos_about-image {
         width: 100%;
         border-radius: 0px 6px 6px 0px ;
+    }
+
+    .loisirs_cards-container {
+        width: 100%;
+        justify-content: space-evenly;
     }
 }
 
@@ -419,6 +582,29 @@
         gap: 20px;
     }
 
+    .loisirs_cards-container {
+        width: 100%;
+        padding: 0 1rem 6rem 1rem;
+        box-sizing: border-box;
+    }
+
+    .loisirs_card {
+        width: 18rem;
+    }
+
+    .loisirs_container-txt p {
+        width: 100%;
+    }
+
+    .loisirs_container-txt {
+        padding: 6rem 2rem 3rem 2rem;
+        width: 100%;
+    }
+
+    .loisirs_card.one:before {
+        display: none;
+    }
+
 }
 
 
@@ -457,6 +643,39 @@
     .section_card-duration {
         font-size: 18px;
     }
+
+
+    .loisirs_card {
+        width: 13rem;
+        height: fit-content;
+        padding: 1rem 1.5rem;
+    }
+
+    .loisirs_card-top {
+        grid-template-columns: unset;
+        grid-template-rows: 0.7fr 1fr;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .loisirs_card h5 {
+        margin-bottom: 13px;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .loisirs_card-icon {
+        align-self: unset;
+        justify-self: unset;
+        margin: auto;
+    }
+    
+    .loisirs_card p {
+        width: 100%;
+        text-align: center;
+    }
+    
+
 }
 
 

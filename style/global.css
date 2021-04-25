@@ -81,17 +81,17 @@ h3 {
     line-height: 160%;
 }
 
-/* --- BIG TITLES --- */
+/* --- SMALL TITLES --- */
 h4 {
     font-family: 'Work Sans', sans-serif; 
-    font-size: 90px;
-    line-height: 105%;
+    font-size: 34px;
+    line-height: 125%;
 }
 
 h5 {
     font-family: 'Work Sans', sans-serif; 
-    font-size: 120px;
-    line-height: 105%;
+    font-size: 28px;
+    line-height: 120%;
 }
 
 
@@ -111,9 +111,9 @@ screen and (max-height: 400px) {
 
     h3 { font-size: 30.4px;}
 
-    h4 { font-size: 50px ;}
+    h4 { font-size: 28px ;}
 
-    h5 { font-size: 65px ;}
+    h5 { font-size: 24px ;}
 
     p { font-size: 18px;}
 
