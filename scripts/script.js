@@ -1,5 +1,9 @@
 
 
+/* ------ AUTO UPDATE DATE ------ */
+var todaydate = new Date();
+var annee = todaydate.getFullYear();
+document.getElementById("date").innerHTML = annee;
 
 
 

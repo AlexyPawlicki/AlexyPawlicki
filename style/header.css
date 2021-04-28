@@ -23,7 +23,7 @@ header {
     height: 7rem;
     z-index: 10;
 
-    background: linear-gradient(45deg, var(--dark), var(--dark));
+    background: linear-gradient(45deg, var(--deep_dark), var(--deep_dark));
     background-repeat: no-repeat;
     background-size: 100% 0%;
     transition: all .5s ease .1s;

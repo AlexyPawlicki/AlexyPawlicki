@@ -3,9 +3,15 @@
 
 
 
+
+section {
+    background-image: url(../assets/grain.png);
+}
+
+
+
 .apropos_about-box {
     background: var(--light);
-    background-image: url(../assets/grain.png);
     padding-top: 13rem;
 }
 
@@ -83,6 +89,10 @@
 .apropos_about-title,
 .apropos_about-inner p {
     color: var(--dark);    
+}
+
+.apropos_sm_divider {
+    display: none;
 }
 
 .apropos_about-title {
@@ -456,6 +466,84 @@
 
 
 
+.apropos_travaux-box {
+    width: 100%;
+    background-color: var(--alt);
+    padding: 15rem 0;
+}
+
+.apropos_travaux-container {
+    display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    margin: auto;
+    width: clamp(20rem, 60vw, 140rem);
+}
+
+.apropos_travaux-title,
+.apropos_travaux-btn {
+    margin: auto 0;
+}
+
+.apropos_travaux-title {
+    margin: 0;
+    color: var(--dark);
+    width: clamp(27rem, 45vw, 75rem);
+}
+
+.apropos_travaux-btn {
+    width: fit-content;   
+    margin-top: 1rem;
+
+    border: 2px solid var(--dark);
+    border-radius: 2rem;
+    box-sizing: border-box;
+    font-weight: normal;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 2.3em;
+    padding-left: 2.3em;
+
+    color: var(--light);
+    background-color: var(--dark);
+
+    transition: all .2s ease;
+}
+
+.apropos_travaux-btn:hover {
+    color: var(--dark);
+    background-color: var(--light);
+    border: 2px solid var(--light);
+
+    transition: all .2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -506,6 +594,35 @@
         max-width: 55rem;
         padding-left: 3vw;
     }    
+
+}
+
+
+
+/* TODO ------------------------------------ ------------------ ------------------  */
+@media (min-width: 2000px) {
+
+    .apropos_sm_divider {
+        display: block;
+        position: relative;
+        margin-bottom: -3px;
+        top: 45px;
+        height: 4px;
+        width: 36px;
+        background-color: var(--main);
+    }
+    
+    .apropos_sm_divider:after {
+        content: 'À PROPOS';
+        position: relative;
+        white-space: nowrap;
+        top: -1rem;
+        left: 3rem;
+        color: var(--main);
+        font-family: 'Prompt', sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+    }
 }
 
 
@@ -603,6 +720,16 @@
 
     .loisirs_card.one:before {
         display: none;
+    }
+
+    .apropos_travaux-container {
+        align-items: center;
+        width: clamp(20rem, 80vw, 140rem);
+    }
+
+    .apropos_travaux-title {
+        text-align: center;
+        width: clamp(13rem, 80vw, 75rem);
     }
 
 }

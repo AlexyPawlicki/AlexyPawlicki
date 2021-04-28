@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>
-    <a class="go-up" onclick="$('#homepage').animatescroll({scrollSpeed:700,easing:'easeInSine'});"></a>
+    <a class="go-up" onclick="$('#apropos').animatescroll({scrollSpeed:700,easing:'easeInSine'});"></a>
 
     
 
@@ -68,72 +68,78 @@
 
 
 
+    
 
 
-    <section id="works" class="works">
+    <section class="work_sections" data-aos="fade-up" data-aos-duration="600">
+      <section class="work_box">
+        <h2 class="work_title">Mes travaux.</h2>
+        <img class="work_arrow" src="./assets/arrow_down.svg" alt="go down arrow">
 
-      <div class="divider"></div>
-  
-      <div class="works__title-container"> <h1>Works</h1> </div>
-  
-      <div class="arrow"> </div>
-  
-      <div class="works__container aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
-        <div class="works__inner" id="works__grid">
-          <li id="card_1" class="works__card"></li>
-          <li id="card_2" class="works__card"></li>
-          <li id="card_3" class="works__card"></li>
-          <li id="card_4" class="works__card"></li>
+        <div class="work_container">
+          
+          <li id="card_1" class="work_card"></li>
+          <li id="card_2" class="work_card"></li>
+          <li id="card_3" class="work_card"></li>
+          <li id="card_4" class="work_card"></li>
+          <li id="card_5" class="work_card"></li>
+          <li id="card_6" class="work_card"></li>
 
-          <li id="card_5" class="works__card"></li>
-          <li id="card_6" class="works__card"></li>
-          <li id="card_7" class="works__card"></li>
-          <li id="card_8" class="works__card"></li>
         </div>
-      </div>
-  
-  
+      </section>
 
-      <div class="project__displayer" id="project__displayer">
+      <section class="project_box">
+        
+        <img src="./assets/work_assets/wave_2.svg" draggable="false" alt="decorative" class="wave_2 noselect">
+        <img src="./assets/work_assets/wave_1.svg" draggable="false" alt="decorative" class="wave_1 noselect">
 
-        <a onclick="collapseProject()" class="close works__close"></a>
 
-        <div class="project__disp-box" id="project__disp">
-
-        <div class="project__disp-left">
-          <div class="project__main-img-container">
-            <img id="project__image" class="project__main-img" src="" alt="" onclick="window.open(this.src)">
+        <a onclick="work_collapse()">
+          <div class="close_btn">
+            <img class="collapse" id="btn_collapse" src="./assets/more.svg" alt="collapse">
           </div>
+        </a>
 
-          <div class="project__prev-container">
-            <div class="project__prev-inner">
-              <img id="project__preview1" src="" alt="" class="project__preview-img" onclick="changeImage(this)" onmouseover="changeImage(this)" draggable="false">
-              <img id="project__preview2" src="" alt="" class="project__preview-img" onclick="changeImage(this)" onmouseover="changeImage(this)" draggable="false">
-              <img id="project__preview3" src="" alt="" class="project__preview-img" onclick="changeImage(this)" onmouseover="changeImage(this)" draggable="false">
-              <img id="project__preview4" src="" alt="" class="project__preview-img" onclick="changeImage(this)" onmouseover="changeImage(this)" draggable="false">
+
+        <div class="display_container">
+          <div class="display_container-txt">
+            <div class="display_txt-box">
+              <div class="disp_title_redirect-container">
+                <h1 class="disp_title">Mon logotype</h1>
+                <a href="TODO" title="Voir sur"><img class="redirect_btn" draggable="false" src="./assets/redirect.svg" alt="redirect"></a>
+              </div>
+              <p class="disp_paragraph">
+                Consectetur maiores, doloremque voluptate tempore est facilis. Obcaecati eligendi voluptates facere tempore officiis perspiciatis. Delectus alias veritatis quidem. Voluptates aspernatur dolor provident.
+                <br><br>
+                Quis, expedita iure deserunt, id voluptas delectus est cum accusamus quidem, nostrum vitae dolorem.
+              </p>
             </div>
           </div>
-        </div>
 
+          <div class="display_container-img">
+            <div class="display_img-box">
 
-        <div class="project__disp-right"> 
-          <div class="project__detail-container">
-            <h2 id="project__title"></h2>
-            <div id="project__tag" class="project__tag-container"></div>
-            <p id="project__txt"> </p>
-
-            <div class="project__buttons">
-              <a href="#" tabindex="TODO"><li>Voir le projet</li></a>
             </div>
-
           </div>
+
+
         </div>
 
-      </div>
-    </div>
 
-  </section>
 
+
+
+
+      </section>
+    </section>
+
+
+    
+    
+    
+    
+
+    
 
 
 
@@ -175,7 +181,7 @@
           </div>
 
       </div>
-      <div class="footer_copyrights">© 2021 AlexyPawlicki. Made with <span class="icon_heart">❤</span> by Alexy Pawlicki.</div>
+      <div class="footer_copyrights">© <span id="date"></span> AlexyPawlicki. Made with <span class="icon_heart">❤</span> by Alexy Pawlicki.</div>
     </footer>
 
 
@@ -183,7 +189,7 @@
 
 
 
-    <script>
+    <script>      
       //AOS Settings (animate on scroll)
 
       AOS.init();
@@ -196,35 +202,13 @@
         once: true, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
       });
-
-
-
-        // -------- ----------------------------------- -------- // 
-        // -------- PROJECT LISTENER > CHANGING CONTENT -------- //
-        // -------- ----------------------------------- -------- // 
-          // Important var
-          var title = document.getElementById('project__title')
-          var tag = document.getElementById('project__tag')
-          var para = document.getElementById('project__txt')
-
-          document.getElementById("card_1").addEventListener("click", card1);
-          document.getElementById("card_2").addEventListener("click", card2);
-          // document.getElementById("card_3").addEventListener("click", card3);
-          // document.getElementById("card_4").addEventListener("click", card4);
-          // document.getElementById("card_5").addEventListener("click", card5);
-          // document.getElementById("card_6").addEventListener("click", card6);
-
-          var mimage = document.querySelector("#project__image");
-          var prev1 = document.getElementById('project__preview1')
-          var prev2 = document.getElementById('project__preview2')
-          var prev3 = document.getElementById('project__preview3')
-          var prev4 = document.getElementById('project__preview4')
-
+     
+      
     </script>
 
     <script src="./scripts/burgermenu.js"></script>
-    <script  src="./scripts/works_grid.js"></script>
-    <script  src="./scripts/projects_content.js"></script>
+    <script src="./scripts/header_displacement.js"></script>
+    <script src="./scripts/work_listing.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
