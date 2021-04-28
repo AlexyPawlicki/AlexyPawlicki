@@ -3,7 +3,6 @@
 
 
 
-$("#card_1").on( "click", work_display);
 
 $("#card_1").css( "background-image", "url(https://images.unsplash.com/photo-1619460636045-ed08799e25f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80)");
 $("#card_2").css( "background-image", "url(https://images.unsplash.com/photo-1619525673983-38b379202881?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)");
@@ -18,10 +17,12 @@ $("#card_6").css( "background-image", "url(https://images.unsplash.com/photo-161
 
 // Main function 
 function work_display() {
+
     display_project();
 
     setTimeout(function(){ scroll_to_display(); } , 800);
     $(".collapse").addClass("collapse_shaking");
+    $(".display_container-txt").addClass("display_container-txt-active");
 
 }
 
@@ -30,6 +31,7 @@ function work_collapse() {
     $(".collapse").removeClass("collapse_shaking");
     $(".collapse").addClass("close_btn-active");
     $(".project_box").toggleClass("box_active");
+    $(".display_container-txt").toggleClass("display_container-txt-active");
 
     setTimeout(function(){ $(".collapse").removeClass("close_btn-active"); } , 1800);
 }
@@ -63,16 +65,41 @@ function scroll_to_display() {
 
 
 
-// // clear the tags
-// function clear_tags() {
-//     $("#tag").innerHTML = "";
-// }
+// clear the tags
+function clear_tags() {
+    $("#tags").empty();
+}
 
-// // first image is preview one
-// function change_image(arg) {
-//     var exchange =  arg.src;
-//     mimage.src = exchange;
-// }
+// create a new tag 
+function create_tags(x) {
+    var obj_tag = document.createElement("li");
+    obj_tag.innerText = x.toString();
+    obj_tag.classList.add("tag");
+    $("#tags").append(obj_tag);
+}
+
+// paragraph replacemement 
+function title_modifier(x) {
+    $("#project_title").text(x.toString());
+}
+
+// paragraph replacemement 
+function paragraph_modifier(x) {
+    $("#project_paragraph").text(x.toString());
+}
+
+// main function to select image 
+function img_switch(number, arg) {
+    $(".preview_btn").removeClass("selected");
+    $("#pre_"+number).addClass("selected");
+    change_image(arg.toString());
+}
+
+// change image
+function change_image(arg) {
+    $("#preview").attr("src", arg.toString());
+}
+
 
 
 

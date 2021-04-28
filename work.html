@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>
-    <a class="go-up" onclick="$('#apropos').animatescroll({scrollSpeed:700,easing:'easeInSine'});"></a>
+    <a class="go-up" onclick="$('body').animatescroll({scrollSpeed:700,easing:'easeInSine'});"></a>
 
     
 
@@ -105,20 +105,27 @@
           <div class="display_container-txt">
             <div class="display_txt-box">
               <div class="disp_title_redirect-container">
-                <h1 class="disp_title">Mon logotype</h1>
-                <a href="TODO" title="Voir sur"><img class="redirect_btn" draggable="false" src="./assets/redirect.svg" alt="redirect"></a>
+                <h1 class="disp_title" id="project_title">Mon logotype</h1>
+                <a href="TODO"><img class="redirect_btn noselect" draggable="false" src="./assets/redirect.svg" alt="redirect"></a>
               </div>
-              <p class="disp_paragraph">
+              <p class="disp_paragraph" id="project_paragraph">
                 Consectetur maiores, doloremque voluptate tempore est facilis. Obcaecati eligendi voluptates facere tempore officiis perspiciatis. Delectus alias veritatis quidem. Voluptates aspernatur dolor provident.
                 <br><br>
                 Quis, expedita iure deserunt, id voluptas delectus est cum accusamus quidem, nostrum vitae dolorem.
               </p>
+              <div class="tag_container" id="tags">
+              </div>
             </div>
           </div>
 
           <div class="display_container-img">
+            <img class="display_img-img" id="preview" alt="TODO">
             <div class="display_img-box">
-
+              <div class="display_img-box-inner">
+                <li class="preview_btn" id="pre_1"></li>
+                <li class="preview_btn" id="pre_2"></li>
+                <li class="preview_btn" id="pre_3"></li>
+              </div>
             </div>
           </div>
 
@@ -209,6 +216,7 @@
     <script src="./scripts/burgermenu.js"></script>
     <script src="./scripts/header_displacement.js"></script>
     <script src="./scripts/work_listing.js"></script>
+    <script src="./scripts/work_content.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
