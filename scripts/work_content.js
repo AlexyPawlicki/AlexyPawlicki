@@ -20,13 +20,18 @@ function card1() {
     clear_tags();
 
     // texts
-    create_tags("Software");
-    create_tags("Software");
-    title_modifier("Titre du projet 1");
-    paragraph_modifier('Description du projet');
+    create_tags("Photoshop");
+    create_tags("Affinity Designer");
+    title_modifier("Mon logotype");
+    paragraph_modifier(`
+    Je l'ai créé pour ajouter de ma personnalité à mes signatures de mail et à mon site.
+    Par ailleurs, cela a pour but de souligner une certaine rigueur ainsi qu'une part de professionnalisme. 
+    <br><br> 
+    Ce logo représente mes initiales (AP) suivis d'un point pour rappeler la notion de rigueur.
+    `);
 
     // images
-    var bg = $("#card_1").css("background-image");
+    var bg = $("#card_1-img").css("background-image");
     bg = /^url\((['"]?)(.*)\1\)$/.exec(bg);
     bg = bg ? bg[2] : "";
     
@@ -34,10 +39,13 @@ function card1() {
         img_switch(1, bg.toString());
     });
     $("#pre_2").click(function(){
-        img_switch(2, "https://images.unsplash.com/photo-1619616710561-1d0ab63f2272?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+        img_switch(2, "./assets/work_assets/project/1/2.svg");
     });
     $("#pre_3").click(function(){
-        img_switch(3, "https://images.unsplash.com/photo-1610593469791-209a5ab288bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80");
+        img_switch(3, "./assets/work_assets/project/1/3.svg");
+    });
+    $("#pre_4").click(function(){
+        img_switch(4, "./assets/work_assets/project/1/4.png");
     });
     
 
@@ -63,7 +71,7 @@ function card2() {
     paragraph_modifier('Description du projet');
 
     // images
-    var bg = $("#card_2").css("background-image");
+    var bg = $("#card_2-img").css("background-image");
     bg = /^url\((['"]?)(.*)\1\)$/.exec(bg);
     bg = bg ? bg[2] : "";
     
@@ -75,6 +83,9 @@ function card2() {
     });
     $("#pre_3").click(function(){
         img_switch(3, "https://images.unsplash.com/photo-1610593469791-209a5ab288bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80");
+    });
+    $("#pre_4").click(function(){
+        img_switch(4, "./assets/work_assets/project/1/2.svg");
     });
     
 
@@ -101,7 +112,7 @@ function card3() {
     paragraph_modifier('Description du projet');
 
     // images
-    var bg = $("#card_3").css("background-image");
+    var bg = $("#card_3-img").css("background-image");
     bg = /^url\((['"]?)(.*)\1\)$/.exec(bg);
     bg = bg ? bg[2] : "";
     
@@ -113,6 +124,9 @@ function card3() {
     });
     $("#pre_3").click(function(){
         img_switch(3, "https://images.unsplash.com/photo-1610593469791-209a5ab288bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80");
+    });
+    $("#pre_4").click(function(){
+        img_switch(4, "./assets/work_assets/project/1/2.svg");
     });
     
 
@@ -139,7 +153,7 @@ function card4() {
     paragraph_modifier('Description du projet');
 
     // images
-    var bg = $("#card_4").css("background-image");
+    var bg = $("#card_4-img").css("background-image");
     bg = /^url\((['"]?)(.*)\1\)$/.exec(bg);
     bg = bg ? bg[2] : "";
     
@@ -151,6 +165,9 @@ function card4() {
     });
     $("#pre_3").click(function(){
         img_switch(3, "https://images.unsplash.com/photo-1610593469791-209a5ab288bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80");
+    });
+    $("#pre_4").click(function(){
+        img_switch(4, "./assets/work_assets/project/1/2.svg");
     });
     
 
@@ -177,7 +194,7 @@ function card5() {
     paragraph_modifier('Description du projet');
 
     // images
-    var bg = $("#card_5").css("background-image");
+    var bg = $("#card_5-img").css("background-image");
     bg = /^url\((['"]?)(.*)\1\)$/.exec(bg);
     bg = bg ? bg[2] : "";
     
@@ -189,6 +206,9 @@ function card5() {
     });
     $("#pre_3").click(function(){
         img_switch(3, "https://images.unsplash.com/photo-1610593469791-209a5ab288bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80");
+    });
+    $("#pre_4").click(function(){
+        img_switch(4, "./assets/work_assets/project/1/2.svg");
     });
     
 
@@ -215,7 +235,7 @@ function card6() {
     paragraph_modifier('Description du projet');
 
     // images
-    var bg = $("#card_6").css("background-image");
+    var bg = $("#card_6-img").css("background-image");
     bg = /^url\((['"]?)(.*)\1\)$/.exec(bg);
     bg = bg ? bg[2] : "";
     
@@ -227,6 +247,9 @@ function card6() {
     });
     $("#pre_3").click(function(){
         img_switch(3, "https://images.unsplash.com/photo-1610593469791-209a5ab288bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80");
+    });
+    $("#pre_4").click(function(){
+        img_switch(4, "./assets/work_assets/project/1/2.svg");
     });
     
 
