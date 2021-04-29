@@ -2,6 +2,16 @@
 
 
 
+
+$("#card_1-img").css( "background-image", "url('./assets/work_assets/project/1/1.png')" );
+$("#card_2-img").css( "background-image", "url(./assets/work_assets/project/2/0.png");
+$("#card_3-img").css( "background-image", "url(https://images.unsplash.com/photo-1619439443549-3b38b4611adc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80)");
+$("#card_4-img").css( "background-image", "url(https://images.unsplash.com/photo-1619314428206-e475f6648ccf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1396&q=80)");
+$("#card_5-img").css( "background-image", "url(https://images.unsplash.com/photo-1619495447576-a3a86bb4cf0b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)");
+$("#card_6-img").css( "background-image", "url(https://images.unsplash.com/photo-1619508422331-606e38f1f902?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)");
+
+
+
 $("#card_1").on( "click", card1);
 $("#card_2").on( "click", card2);
 $("#card_3").on( "click", card3);
@@ -65,10 +75,15 @@ function card2() {
     clear_tags();
 
     // texts
-    create_tags("Software");
-    create_tags("Software");
-    title_modifier("Titre du projet 2");
-    paragraph_modifier('Description du projet');
+    create_tags("HTML");
+    create_tags("CSS");
+    create_tags("JS");
+    title_modifier("Mon portfolio");
+    paragraph_modifier(`
+    Après des dizaines d'heures de réflexion et de maquettage, vous naviguez actuellement sur ce qui est la version 1.0 de mon portfolio ! 
+    <br> <br>
+    Et voici quelque versions antérieures.
+    `);
 
     // images
     var bg = $("#card_2-img").css("background-image");
@@ -79,13 +94,13 @@ function card2() {
         img_switch(1, bg.toString());
     });
     $("#pre_2").click(function(){
-        img_switch(2, "https://images.unsplash.com/photo-1619616710561-1d0ab63f2272?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+        img_switch(2, "./assets/work_assets/project/2/4.png");
     });
     $("#pre_3").click(function(){
-        img_switch(3, "https://images.unsplash.com/photo-1610593469791-209a5ab288bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80");
+        img_switch(3, "./assets/work_assets/project/2/3.png");
     });
     $("#pre_4").click(function(){
-        img_switch(4, "./assets/work_assets/project/1/2.svg");
+        img_switch(4, "./assets/work_assets/project/2/1.png");
     });
     
 
