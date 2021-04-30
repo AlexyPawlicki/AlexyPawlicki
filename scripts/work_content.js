@@ -6,9 +6,9 @@
 $("#card_1-img").css( "background-image", "url(./assets/work_assets/project/1/1.png)");
 $("#card_2-img").css( "background-image", "url(./assets/work_assets/project/2/0.png)");
 $("#card_3-img").css( "background-image", "url(./assets/work_assets/project/3/1_2.png)");
-$("#card_4-img").css( "background-image", "url(https://images.unsplash.com/photo-1619314428206-e475f6648ccf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1396&q=80)");
+$("#card_4-img").css( "background-image", "url(./assets/work_assets/project/4/TODO.png)");
 $("#card_5-img").css( "background-image", "url(./assets/work_assets/project/5/0.png)");
-$("#card_6-img").css( "background-image", "url(https://images.unsplash.com/photo-1619508422331-606e38f1f902?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)");
+$("#card_6-img").css( "background-image", "url(./assets/work_assets/project/6/TODO.png");
 
 
 

@@ -104,7 +104,7 @@ header {
 }
 
 .header_socialmedia {
-    width: 26px;
+    height: 26px;
     vertical-align: middle;
 }
 
@@ -246,7 +246,7 @@ a.burgermenu:focus .burgermenu_container:after {
 }
 
 @media (max-width: 740px),
-(max-height: 400px) { 
+(max-height: 500px) { 
     .mb_menu {
         display: block;
         position: fixed;
@@ -262,7 +262,7 @@ a.burgermenu:focus .burgermenu_container:after {
     }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 500px) {
     .mb_menu {
         transform: translateX(-120vw);
         opacity: 0;
@@ -331,7 +331,7 @@ a.burgermenu:focus .burgermenu_container:after {
 }
 
 .mb_socialmedia {
-    width: 32px;
+    height: 32px;
     vertical-align: middle;
 }
 
@@ -393,7 +393,7 @@ a.burgermenu:focus .burgermenu_container:after {
 
 
 @media (max-width: 740px),
-(max-height: 400px) { 
+(max-height: 500px) { 
 
     .burgermenu {
         display: block;
@@ -434,7 +434,7 @@ a.burgermenu:focus .burgermenu_container:after {
 
 
 
-@media (max-height: 400px) and (max-width: 1640px) {
+@media (max-height: 500px) and (max-width: 1640px) {
 
     .header_container {
         display: flex;
@@ -476,7 +476,7 @@ a.burgermenu:focus .burgermenu_container:after {
     }
 
     .mb_socialmedia {
-        width: 26px;
+        height: 26px;
     }
 
     .mb_menu-container h3 {
@@ -500,7 +500,7 @@ a.burgermenu:focus .burgermenu_container:after {
 
 
 
-@media (max-height: 370px) {
+@media (max-height: 500px) {
 
     .mb_menu-container {
         padding-top: 0rem;
@@ -514,6 +514,14 @@ a.burgermenu:focus .burgermenu_container:after {
         align-self: self-end;
     }
 
+    .header_sociallogos {
+        display: none;
+    }
+
+    .header_socialmedia {
+        display: none !important;
+    }
+    
 }
 
 
@@ -607,5 +615,8 @@ a.burgermenu:focus .burgermenu_container:after {
       opacity: .7;
       transition: opacity .2s ease-out;
     }
-  }
+}
   
+
+
+

@@ -326,6 +326,7 @@ screen and (max-height: 400px) {
 
 
 
+
 @media screen and (min-width: 1400px) {
 
     .homepage_content-container {
@@ -381,7 +382,18 @@ screen and (max-height: 400px) {
 
 
 
+@media screen and (max-height: 400px) {
+    
+    .homepage_sm_divider { 
+        margin-bottom: -0.5rem;
+    }
 
+    .homepage_sm_divider:after {
+        top: -0.8rem !important;
+        font-size: 18px !important;
+    }
+
+}
 
 
 
