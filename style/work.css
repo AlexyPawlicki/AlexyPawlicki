@@ -3,6 +3,10 @@
 
 
 
+.project_pdf {
+    color: var(--main);
+    text-decoration: underline;
+}
 
 .sm_divider {
     display: block;
