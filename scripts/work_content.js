@@ -3,9 +3,9 @@
 
 
 
-$("#card_1-img").css( "background-image", "url('./assets/work_assets/project/1/1.png')" );
-$("#card_2-img").css( "background-image", "url(./assets/work_assets/project/2/0.png");
-$("#card_3-img").css( "background-image", "url(https://images.unsplash.com/photo-1619439443549-3b38b4611adc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80)");
+$("#card_1-img").css( "background-image", "url(./assets/work_assets/project/1/1.png)");
+$("#card_2-img").css( "background-image", "url(./assets/work_assets/project/2/0.png)");
+$("#card_3-img").css( "background-image", "url(./assets/work_assets/project/3/1_2.png)");
 $("#card_4-img").css( "background-image", "url(https://images.unsplash.com/photo-1619314428206-e475f6648ccf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1396&q=80)");
 $("#card_5-img").css( "background-image", "url(https://images.unsplash.com/photo-1619495447576-a3a86bb4cf0b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)");
 $("#card_6-img").css( "background-image", "url(https://images.unsplash.com/photo-1619508422331-606e38f1f902?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80)");
@@ -121,10 +121,16 @@ function card3() {
     clear_tags();
 
     // texts
-    create_tags("Software");
-    create_tags("Software");
-    title_modifier("Titre du projet 3");
-    paragraph_modifier('Description du projet');
+    func_project_link("https://replit.com/@AlexyPawlicki/Carte-de-Jeu-de-Societe?v=1", "Voir sur Replit");
+    create_tags("HTML/CSS/JS");
+    create_tags("Angular");
+    create_tags("Photoshop");
+    title_modifier("Projet - 2021");
+    paragraph_modifier(`
+    Pour ce projet tutoret, il nous a été incombé de créer de A à Z une plateforme d'achat de jeux de sociétés, et ce, en 18h.
+    <br> <br>
+    J'ai ainsi conceptualisé l'identité de notre entreprise fictive et j'ai activement participé à l'élaboration du squelette de la page (réalisation des cartes, images, ...).
+    `);
 
     // images
     var bg = $("#card_3-img").css("background-image");
@@ -135,18 +141,19 @@ function card3() {
         img_switch(1, bg.toString());
     });
     $("#pre_2").click(function(){
-        img_switch(2, "https://images.unsplash.com/photo-1619616710561-1d0ab63f2272?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+        img_switch(2, "./assets/work_assets/project/3/3.png");
     });
     $("#pre_3").click(function(){
-        img_switch(3, "https://images.unsplash.com/photo-1610593469791-209a5ab288bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80");
+        img_switch(3, "./assets/work_assets/project/3/15.png");
     });
     $("#pre_4").click(function(){
-        img_switch(4, "./assets/work_assets/project/1/2.svg");
+        img_switch(4, "./assets/work_assets/project/3/14.png");
     });
     
 
     $("#pre_1").click();
     work_display();
+
 }
 
 

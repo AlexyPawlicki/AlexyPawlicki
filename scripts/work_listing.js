@@ -57,6 +57,7 @@ function scroll_to_display() {
 
 // clear the tags
 function clear_tags() {
+    $("#project_link").css("display", "none");
     $("#tags").empty();
 }
 
@@ -71,6 +72,13 @@ function create_tags(x) {
 // paragraph replacemement 
 function title_modifier(x) {
     $("#project_title").text(x.toString());
+}
+
+// link replacement 
+function func_project_link(link, title) {
+    $("#project_link").css("display", "flex");
+    $("#project_link").attr("href", link.toString());
+    $("#project_link").attr("title", title.toString());
 }
 
 // paragraph replacemement 
