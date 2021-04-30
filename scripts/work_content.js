@@ -75,6 +75,7 @@ function card2() {
     clear_tags();
 
     // texts
+    func_project_link("https://github.com/AlexyPawlicki/AlexyPawlicki.github.io", "Voir sur GitHub");
     create_tags("HTML");
     create_tags("CSS");
     create_tags("JS");
