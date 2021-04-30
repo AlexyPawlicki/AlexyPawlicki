@@ -215,7 +215,7 @@ function card5() {
     create_tags("HTML/CSS");
     create_tags("Photoshop");
     create_tags("Laravel");
-    title_modifier("Marathon 2020");
+    title_modifier("Projet - 2020");
     paragraph_modifier(`
     Dans le cadre du projet tutoret de troisième semestre, il nous a été incombé de créer de A à Z une plateforme d'achat de jeux de sociétés par groupe, et ce, en 18h.
     <br> <br>
