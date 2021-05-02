@@ -37,7 +37,7 @@ function card1() {
     Je l'ai créé pour ajouter de ma personnalité à mes signatures de mail et à mon site.
     Par ailleurs, cela a pour but de souligner une certaine rigueur ainsi qu'une part de professionnalisme. 
     <br><br> 
-    Ce logo représente mes initiales (AP) suivis d'un point pour rappeler la notion de rigueur.
+    Ce logo représente mes initiales (AP) suivies  d'un point pour rappeler la notion de rigueur et de sérieux.
     `);
 
     // images
@@ -83,7 +83,7 @@ function card2() {
     paragraph_modifier(`
     Après des dizaines d'heures de réflexion et de maquettage, vous naviguez actuellement sur ce qui est la version 1.0 de mon portfolio ! 
     <br> <br>
-    Et voici quelque versions antérieures.
+    Et voici quelques-un de ses prototypes.
     `);
 
     // images
@@ -128,7 +128,7 @@ function card3() {
     create_tags("Angular");
     title_modifier("Projet - 2021");
     paragraph_modifier(`
-    Pour ce dernier projet tutoret, la consigne demeura la même qu'au précèdent : créer un site d'achat de jeux de société, en groupe, et en un peu moins de deux journée de travail.  
+    Pour ce dernier projet tutoret, la consigne demeura la même qu'au précédent : créer un site d'achat de jeux de société, en groupe, et en un peu moins de deux journée de travail.  
     <br> <br>
     J'ai ainsi conceptualisé l'identité de notre entreprise fictive et j'ai activement participé à l'élaboration de la page (réalisation des cartes, images, ...).
     `);

@@ -559,6 +559,12 @@ img.work_arrow {
 }
 
 
+@media (min-height: 1900px) {
+    .display_txt-box  {
+        left: 1vw;
+        min-width: 34vw;
+    }
+}
 
 
 

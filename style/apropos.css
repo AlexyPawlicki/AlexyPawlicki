@@ -469,16 +469,31 @@ section {
 .apropos_travaux-box {
     width: 100%;
     background-color: var(--alt);
-    padding: 15rem 0;
+    padding: 3rem 0;
+    display: grid;
+        grid-template-columns: 50% 50%;
 }
 
 .apropos_travaux-container {
+    align-self: center;
+    position: relative;
+        left: 2.5rem;
+}
+
+.apropos_travaux-inner {
+    margin: auto 2.5vw auto auto;
     display: flex;
         flex-direction: column;
         gap: 1.5rem;
-    margin: auto;
-    width: clamp(20rem, 60vw, 140rem);
+    width: fit-content;
 }
+
+.apropos_travaux-illustration-container {
+    width: 85%;
+    max-width: 35rem;
+    margin-left: 0;
+}
+
 
 .apropos_travaux-title,
 .apropos_travaux-btn {
@@ -488,7 +503,7 @@ section {
 .apropos_travaux-title {
     margin: 0;
     color: var(--dark);
-    width: clamp(27rem, 45vw, 75rem);
+    width: clamp(27.5rem, 35vw, 30.5rem);
 }
 
 .apropos_travaux-btn {
@@ -594,6 +609,10 @@ section {
         max-width: 55rem;
         padding-left: 3vw;
     }    
+
+    .apropos_travaux-illustration-container {
+        margin: auto auto auto 5vw;
+    }
 
 }
 
@@ -722,15 +741,70 @@ section {
         display: none;
     }
 
-    .apropos_travaux-container {
-        align-items: center;
-        width: clamp(20rem, 80vw, 140rem);
+    .apropos_travaux-inner {
+        gap: 1rem;
     }
 
     .apropos_travaux-title {
-        text-align: center;
-        width: clamp(13rem, 80vw, 75rem);
+        font-size: 50px;
+        width: clamp(20.7rem, 35vw, 30.5rem);
+        z-index: 1;
     }
+
+    .apropos_travaux-illustration {
+        opacity: .7;
+    }
+
+
+    
+}
+
+
+
+
+
+/* ----- ----- */
+
+
+
+@media (max-width: 800px) {
+
+    .apropos_travaux-box {
+        grid-template-columns: unset;
+        grid-template-rows: 350px 0px;
+    }
+
+    .apropos_travaux-container {
+        margin: auto;
+        left: unset;
+        text-align: center;
+    }
+
+    .apropos_travaux-btn {
+        margin: auto;
+        font-size: 20px;
+        padding-right: 22px;
+        padding-left: 22px;
+        z-index: 1;
+    }
+
+    .apropos_travaux-illustration-container {
+        width: 100%;
+        max-width: unset;
+        height: 350px;
+        text-align: center;
+        transform: translateY(-100%);
+        z-index: 0;
+    }
+
+    .apropos_travaux-illustration {
+        margin: auto;
+        max-width: 100%;
+        height: inherit;
+        opacity: .2;
+    }
+
+    
 
 }
 
@@ -801,6 +875,16 @@ section {
         width: 100%;
         text-align: center;
     }
+
+
+    .apropos_travaux-title {
+        font-size: 35px;
+    }
+
+    .apropos_travaux-illustration {
+        opacity: .1;
+    }
+
     
 
 }
