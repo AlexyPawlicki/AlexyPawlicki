@@ -27,6 +27,37 @@
     font-size: 22px;
 }
 
+.hero {
+    background-image: url(../assets/work_assets/bg2.png); 
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.work_title:after {
+    content: url(../frame.png);
+    position: absolute;
+    top: -55px;
+    left: -96px;
+    opacity: .3;
+    animation: rotation 3s ease infinite alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes rotation {
+    0%, 100% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(35deg);
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -44,6 +75,13 @@
 
 
 
+
+
+
+
+
+
+
 .work_box {
     display: flex;
         flex-direction: column;
@@ -51,10 +89,16 @@
 }
 
 .work_title {
+    position: relative;
     margin: 15rem auto 5.5rem auto;
-    width: 100%;
+    width: fit-content;
     color: var(--light);
     text-align: center;
+}
+
+.headtitle {
+    display: flex; 
+        flex-direction: column;
 }
 
 img.work_arrow {

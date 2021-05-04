@@ -15,9 +15,9 @@ $("#card_6-img").css( "background-image", "url(./assets/work_assets/project/6/TO
 $("#card_1").on( "click", card1);
 $("#card_2").on( "click", card2);
 $("#card_3").on( "click", card3);
-$("#card_4").on( "click", card4);
+// $("#card_4").on( "click", card4);
 $("#card_5").on( "click", card5);
-$("#card_6").on( "click", card6);
+// $("#card_6").on( "click", card6);
 
 
 

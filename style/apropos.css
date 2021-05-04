@@ -46,7 +46,7 @@ section {
 .apropos_about-image {
     width: 75%;
     min-width: 27rem;
-    height: 40rem;
+    height: 47rem;
     border-radius: 5px;
     object-fit: cover;
     object-position: center;
@@ -83,7 +83,7 @@ section {
     width: fit-content;
     
     height: 100%;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .apropos_about-title,
@@ -903,4 +903,18 @@ section {
     .apropos_about-title {
         margin-left: unset;
     }
+}
+
+
+
+@media (min-width: 1200px) {
+    
+    .apropos_about-inner {
+        justify-content: space-evenly;
+    }
+    
+    .apropos_about-image {
+        float: right;
+    }
+
 }

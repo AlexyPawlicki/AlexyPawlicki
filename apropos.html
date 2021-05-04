@@ -78,7 +78,16 @@
     
     <section id="apropos" class="apropos_about-box">
       <div class="apropos_about-container">
-        <img class="apropos_about-image" src="https://images.unsplash.com/photo-1591351566678-6b29a9d0123f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="">
+        <!-- <img class="apropos_about-image" src="./assets/apropos_assets/moi.png" alt=""> -->
+
+        <picture>
+          <source srcset="./assets/apropos_assets/moi_mobile.png"
+            media="(max-width: 1000px)">
+          <source srcset="./assets/apropos_assets/moi.png"
+            media="(max-width: 640px)">
+          <img  class="apropos_about-image" src="./assets/apropos_assets/moi.png" alt="" />
+        </picture>
+        
         <div class="apropos_about-inner">
           
           <!-- TODO : séparateur 'quotation' --------------------------- -->
@@ -223,12 +232,12 @@
       <div class="apropos_travaux-container">
         <div class="apropos_travaux-inner">
           <h1 class="apropos_travaux-title">Vous souhaitez me contacter ?</h1>
-          <a class="apropos_travaux-btn" href="./work.html"> Projets </a>
+          <a class="apropos_travaux-btn" href="./contact.html"> Contact </a>
         </div>
       </div>
 
       <div class="apropos_travaux-illustration-container">
-        <img class="apropos_travaux-illustration" src="./assets/apropos_assets/calltoaction_illustration.svg" alt="work_illustration">
+        <img class="apropos_travaux-illustration noselect" draggable="false" src="./assets/apropos_assets/calltoaction_illustration.svg" alt="work_illustration">
       </div>
         
     </section>
