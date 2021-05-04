@@ -489,9 +489,9 @@ section {
 }
 
 .apropos_travaux-illustration-container {
-    width: 85%;
-    max-width: 35rem;
-    margin-left: 0;
+    width: clamp(25rem, 85%, 35rem);
+    margin: auto;    
+    text-align: center;
 }
 
 
@@ -650,6 +650,21 @@ section {
 
 
 
+
+@media (max-width: 1200px) {
+    .apropos_travaux-illustration {
+        width: 20rem;
+    }
+}
+
+
+
+
+/* ----- ----- */
+
+
+
+
 @media (max-width: 1000px) {
 
     .apropos_about-container {
@@ -751,9 +766,6 @@ section {
         z-index: 1;
     }
 
-    .apropos_travaux-illustration {
-        opacity: .7;
-    }
 
 
     
@@ -799,7 +811,7 @@ section {
 
     .apropos_travaux-illustration {
         margin: auto;
-        max-width: 100%;
+        width: auto;
         height: inherit;
         opacity: .2;
     }
@@ -882,7 +894,7 @@ section {
     }
 
     .apropos_travaux-illustration {
-        opacity: .1;
+        opacity: .2;
     }
 
     
@@ -907,6 +919,9 @@ section {
 
 
 
+
+
+
 @media (min-width: 1200px) {
     
     .apropos_about-inner {
@@ -915,6 +930,12 @@ section {
     
     .apropos_about-image {
         float: right;
+    }
+
+    .apropos_travaux-illustration {
+        min-width: 25rem;
+        width: 20vw;
+        max-width: 50rem;
     }
 
 }
