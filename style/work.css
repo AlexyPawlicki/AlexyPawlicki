@@ -34,14 +34,17 @@
     background-position: top;
 }
 
-.work_title:after {
-    content: url(../frame.png);
-    position: absolute;
-    top: -55px;
-    left: -96px;
-    opacity: .3;
-    animation: rotation 3s ease infinite alternate;
-    animation-timing-function: ease-out;
+@media (min-width: 700px) {
+    .work_title:after {
+        content: url(../frame.png);
+        contain: content;
+        position: absolute;
+        top: -55px;
+        left: -96px;
+        opacity: .3;
+        animation: rotation 3s ease infinite alternate;
+        animation-timing-function: ease-out;
+    }
 }
 
 @keyframes rotation {
