@@ -655,6 +655,7 @@ section {
     .apropos_travaux-illustration {
         width: 20rem;
     }
+
 }
 
 
@@ -936,6 +937,17 @@ section {
         min-width: 25rem;
         width: 20vw;
         max-width: 50rem;
+        animation: float 1.5s ease infinite alternate;
+    }
+
+    @keyframes float {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(10px);
+        }
+        
     }
 
 }
