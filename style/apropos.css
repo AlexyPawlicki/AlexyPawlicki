@@ -468,7 +468,8 @@ section {
 
 .apropos_travaux-box {
     width: 100%;
-    background-color: var(--alt);
+    /* background-color: var(--alt); */
+    background: linear-gradient(45deg, #4056F1, #3F89F1, #3FA8F1);
     padding: 3rem 0;
     display: grid;
         grid-template-columns: 50% 50%;
