@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Alexy Pawlicki</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./style/footer.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/animatescroll.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- import du dessous pour le parallax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script> 
+  </head>
+  <body>
+
+    <a onclick="burgermenu()" class="burgermenu">
+      <div class="burgermenu_container"></div>
+    </a>
+    <div class="mb_menu">
+      <div class="mb_menu-container">
+        <h3>Où allons-nous maintenant ?</h3>
+        <ul class="mb_links-container">
+          <a href="./apropos.html"><li class="mb_menu-link">À propos.</li></a>
+          <a href="./work.html"><li class="mb_menu-link">Mes travaux.</li></a>
+          <a href="./contact.html"><li class="mb_menu-link">Contact.</li></a>
+        </ul>
+        <div class="mb_socialmedia-container">
+          <a href="https://www.behance.net/alexypawlicki" target="_blank"><img class="mb_socialmedia" src="./assets/icons/behance.png" alt="behance_logo"></a>
+          <a href="TODO" target="_blank"><img class="mb_socialmedia" src="./assets/icons/fiverr.png" alt=""></a>
+          <a href="https://github.com/AlexyPawlicki" target="_blank"><img class="mb_socialmedia" src="./assets/icons/github.png" alt="github_logo"></a>
+        </div>
+      </div>
+    </div>
+    <a class="go-up" onclick="$('#homepage').animatescroll({scrollSpeed:700,easing:'easeInSine'});"></a>
+
+    
+
+
+    <header>
+      <div class="header_container">
+        <a href="./index.html" class="header_logo-link"> 
+          <picture class="header_logo-container">
+            <source srcset="./assets/logo/alexypawlicki_logo1.svg" media="(min-width: 380px)">
+            <img src="./assets/logo/alexypawlicki_logo4.svg" class="header_logo" alt="ap logo" />
+          </picture>
+        </a>
+        <nav class="header_nav">
+          <a href="./apropos.html"><li>À propos.</li></a>
+          <a href="./work.html"><li>Mes projets.</li></a>
+          <a href="./contact.html"><li>Contact.</li></a>
+        </nav>
+      </div>
+    </header>
+
+    
+
+
+
+
+
+
+    <section class="contact">
+
+
+      <div class="contact_heading"></div>
+
+
+      <div class="mail_container">
+        <h3 data-aos="fade-right" data-aos-duration="700">Vous souhaitez me contacter ?</h3>
+        <div class="mail_inline">
+          <a href="mailto:alexypawlicki@gmail.com" data-aos="fade-right" data-aos-duration="700"><h2 class="mail">AlexyPawlicki@gmail.com</h2></a>
+          <div class="social" data-aos="fade-left" data-aos-duration="700">
+            <a href="https://www.behance.net/alexypawlicki" target="_blank"><img class="noselect" draggable="false" src="./assets/icons/behance.png" alt="behance"></a>
+            <a href="TODO" target="_blank"><img class="noselect" draggable="false" src="./assets/icons/behance.png" alt="behance"></a>
+            <a href="https://github.com/AlexyPawlicki" target="_blank"><img class="noselect" draggable="false" src="./assets/icons/github.png" alt="github"></a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="other_container" data-aos="fade-right" data-aos-duration="700">
+        <div class="other_inner">
+          <img draggable="false" class="noselect" src="./assets/icons/location.svg" alt="location">
+          <p>Cauchy-à-la-Tour, 62260</p>
+        </div>
+        <div class="other_inner">
+          <img draggable="false" class="noselect" src="./assets/icons/phone.svg" alt="phone">
+          <p>07.77.78.60.21</p>
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <script>
+      //AOS Settings (animate on scroll)
+
+      AOS.init();
+      AOS.init({
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease-out', // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+      });
+    </script>
+
+    <script src="./scripts/burgermenu.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

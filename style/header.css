@@ -75,7 +75,8 @@ header {
         align-items: center;
     height: inherit;
     padding: 0 15px;
-    transition: color .2s ease;
+    opacity: 1;
+    transition: opacity .2s ease;
 }
 
 
@@ -83,8 +84,9 @@ header {
 /* ------ MENU NAV LI ------ */
 
 .header_nav a li:hover {
-    color: var(--deep_grey);
-    transition: color .2s ease;
+    /* color: var(--deep_grey); */
+    opacity: .3;
+    transition: opacity .2s ease;
 }
 
 
