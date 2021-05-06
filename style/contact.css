@@ -97,7 +97,39 @@
 
 
 
+@media (min-width: 1200px) {
 
+    .faderight {
+        animation: fade_right .7s ease 50ms;
+    }
+
+    .fadeleft {
+        animation: fade_left .7s ease 50ms;
+    }    
+
+    @keyframes fade_right {
+        from {
+            transform: translateX(-50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade_left {
+        from {
+            transform: translateX(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+    
+}
 
 
 
