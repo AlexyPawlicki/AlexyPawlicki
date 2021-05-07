@@ -30,6 +30,7 @@ function card1() {
     clear_tags();
 
     // texts
+    func_project_link("./assets/work_assets/project/1/charte_simplified.pdf", "Voir le pdf");
     create_tags("Photoshop");
     create_tags("Affinity Designer");
     title_modifier("Mon logotype");

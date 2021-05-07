@@ -2,6 +2,9 @@
 
 
 
+body {
+    background-image: url(../assets/grain.png);
+}
 
 .contact_heading {
     background: linear-gradient(45deg, #4056F1, #3F89F1, #3FA8F1);
@@ -96,6 +99,43 @@
 
 
 
+.copyrights {
+    color: var(--deep_grey);
+    width: 100%;
+    margin: 0 auto 3rem auto;
+    font-family: 'Prompt', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    opacity: .7;
+}
+
+.icon_heart {
+    color: #b83636;
+}
+
+.fixed_bottom {
+    display: none;
+    position: absolute;
+        bottom: 0;
+}
+
+.in_container {
+    margin-top: 8rem;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1200px) {
 
@@ -171,6 +211,20 @@
 
     .social {
         width: fit-content;
+    }
+}
+
+
+@media (min-height: 800px) {
+
+    .fixed_bottom {
+        display: block;
+        position: absolute;
+            bottom: 0;
+    }
+
+    .in_container {
+        display: none;
     }
 
 }
