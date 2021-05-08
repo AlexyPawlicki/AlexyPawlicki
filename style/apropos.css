@@ -792,6 +792,8 @@ section {
         margin: auto;
         left: unset;
         text-align: center;
+        transform: translateZ(1px);
+        z-index: 1;
     }
 
     .apropos_travaux-btn {
@@ -815,6 +817,7 @@ section {
         margin: auto;
         width: auto;
         height: inherit;
+        transform: translateY(-100%);
         opacity: .2;
     }
 

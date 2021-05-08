@@ -347,7 +347,7 @@ img.work_arrow {
     color: var(--light);
     margin: 0 0 5rem 0;
     min-width: 37vw;
-    padding-right: 4vw;
+    padding-right: 6vw;
     box-sizing: border-box;
 }
 
